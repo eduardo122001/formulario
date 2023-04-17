@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID otro</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .grid-container {
+        display: grid;
+            grid-template-rows: 25px 100px 100px 170px 180px 200;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-gap: 0px;
+            border: black 2px solid;
+            grid-template-areas: 
+            "an an an an"
+            "b b c c"
+            "d d e e"
+            "f f g g"
+            "h h i i"
+            "j j k k"
+        }
+        .grid-a {
+         background: rgb(3, 61, 44);  
+         text-align: center ; 
+         grid-area: an;
+         -webkit-text-fill-color: white;
+        }
+
+        .grid-b {
+         background:white;  
+         text-align: center ; 
+         grid-area: b;
+        }
+        .grid-c {
+         background:rgb(235, 235, 235);  
+         text-align: center ; 
+         grid-area: c;
+        }
+
+        .grid-d {
+         background:rgb(235, 235, 235);  
+         text-align: center ; 
+         grid-area: d;
+        }
+        .grid-e {
+         background:white;  
+         text-align: center ; 
+         grid-area: e;
+        }
+        .grid-f {
+         background:white;  
+         text-align: center ; 
+         grid-area: f;
+        }
+        .grid-g {
+         background:rgb(235, 235, 235);  
+         text-align: center ; 
+         grid-area: g;
+        }
+        .grid-h {
+         background:rgb(235, 235, 235);  
+         text-align: center ; 
+         grid-area: h;
+        }
+        .grid-i {
+         background:white;  
+         text-align: center ; 
+         grid-area: i;
+        }
+        .grid-j {
+         background:white;  
+         text-align: center ; 
+         grid-area: j;
+        }
+        
+        .grid-k {
+         background:rgb(235, 235, 235);  
+         text-align: center ; 
+         grid-area: k;
+        }
+</style>
+</head>
+<body>
+    <div class="grid-container">
+         <div class="grid-a">LLENE EL FORMULARIO</div>
+        <div class="grid-b">
+            <h3>Nombre y Apellidos</h3>
+            <label for="fname">:</label>
+            <input type="text" id="fname" name="fname">
+            <input type="submit" value="Submit">
+        </div>
+        <div class="grid-c">
+            <h3>Fecha de Nacimiento</h3>
+            <label for="fecha-nacimiento">:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+            <input type="submit" value="Submit">
+        </div>
+        <div class="grid-d">
+            <h3>Ocupación</h3>
+            <label for="ocupacion">:</label>
+            <input type="text" id="ocupacion" name="ocupacion">
+            <input type="submit" value="Submit">
+        </div>
+        <div class="grid-e">
+            <h3>Contacto </h3>
+            <label for="contacto">:</label>
+            <input type="text" placeholder="telefono o e-mail" id="contacto" name="contacto">
+            <input type="submit" value="Submit">
+        </div>
+        <div class="grid-f">
+            <h3>Nacionalidad </h3>
+            <label for="nacionalidad">:</label>
+            <select id="nacionalidad" name="nacionalidad">
+                <option value="Peru">Peru</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Chile">Chile</option>
+                <option value="Ecuador">Ecuador</option>
+            </select>
+            <input type="submit" value="submit">
+        </div>
+        <div class="grid-g">
+            <h3>Nivel de ingles</h3>
+            <input type="radio" id="basico" name="basico">
+             <label for="basico">basico</label><br>
+             <input type="radio" id="intermedio" name="intermedio">
+             <label for="intermedio">intermedio</label><br>
+             <input type="radio" id="avanzado" name="avanzado" >
+             <label for="avanzado">avanzado</label><br>
+            <input type="radio" id="fluido " name="fluido " >
+             <label for="fluido ">fluido </label><br>
+            <input type="submit" value="Submit">
+            
+        </div>
+        <div class="grid-h">
+            <h3>Lenguajes de programación</h3>
+            <input type="checkbox" id="C++" name="C++" >
+            <label for="C++">C++</label><br>
+            <input type="checkbox" id="Python" name="Python" >
+            <label for="Python"> Python</label><br>
+            <input type="checkbox" id="HTML" name="HTML" >
+            <label for="HTML">HTML</label><br><br>
+            <input type="submit" value="Submit">
+        </div>
+        <div class="grid-i">
+            <h3>Aptitudes </h3>
+            <input list="aptitudes" name="aptitudes">
+            <datalist id="aptitudes">
+                <option value="lider">
+                <option value="soporte">
+                <option value="creador">
+                <option value="innovador">
+                <option value="analizador">
+            </datalist>
+            <input type="submit">
+        </div>
+        <div class="grid-j">
+            <h3>Habilidades </h3>
+            <input type="checkbox" id="calculo" name="calculo" >
+            <label for="calculo">calculo</label><br>
+            <input type="checkbox" id="razonamiento" name="razonamiento" >
+            <label for="razonamiento"> razonamiento</label><br>
+            <input type="checkbox" id="tester" name="tester" >
+            <label for="tester">tester</label><br><br>
+            <input type="submit" value="Submit">
+        </div>
+        <div class="grid-k">
+            <h3>Perfil  </h3>
+            <textarea name="message" rows="10" cols="30"></textarea>
+            <br><br>
+            <input type="submit" value="submit">
+        </div>
+</body>
+</html>
